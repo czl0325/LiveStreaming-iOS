@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLn-ft-qou">
+                                <rect key="frame" x="117" y="394" width="180" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="hVd-EG-cFM"/>
+                                </constraints>
+                                <state key="normal" title="添加毛玻璃效果">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBlur:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tr7-bd-hWj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgO-dP-3Cm">
+                                <rect key="frame" x="117" y="448" width="180" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="添加素描效果"/>
+                                <connections>
+                                    <action selector="onSketch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhJ-FF-fSM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vH-Te-y4C">
+                                <rect key="frame" x="117" y="502" width="180" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="添加卡通效果"/>
+                                <connections>
+                                    <action selector="onToon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XJe-ef-iUL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1D-ut-LUW">
+                                <rect key="frame" x="117" y="556" width="180" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="6YW-Xn-np7"/>
+                                    <constraint firstAttribute="height" constant="34" id="SLh-3O-1tW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="添加浮雕效果"/>
+                                <connections>
+                                    <action selector="onEmboss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nnn-a2-l2h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDe-gA-D64">
+                                <rect key="frame" x="133.5" y="610" width="147" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="epK-n4-KeZ"/>
+                                    <constraint firstAttribute="height" constant="34" id="yXY-Ty-GwH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="添加多个滤镜效果"/>
+                                <connections>
+                                    <action selector="onMutiple:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SfC-PG-ksQ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="liuyifei" translatesAutoresizingMaskIntoConstraints="NO" id="5nP-tf-i95">
+                                <rect key="frame" x="0.0" y="44" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="N8F-f4-ER6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v1D-ut-LUW" firstAttribute="top" secondItem="5vH-Te-y4C" secondAttribute="bottom" constant="20" id="0tQ-dQ-rgi"/>
+                            <constraint firstItem="fgO-dP-3Cm" firstAttribute="top" secondItem="cLn-ft-qou" secondAttribute="bottom" constant="20" id="4LY-oj-7HE"/>
+                            <constraint firstItem="cLn-ft-qou" firstAttribute="centerX" secondItem="5nP-tf-i95" secondAttribute="centerX" id="Mqk-AI-4oH"/>
+                            <constraint firstItem="lDe-gA-D64" firstAttribute="centerX" secondItem="v1D-ut-LUW" secondAttribute="centerX" id="Van-72-THG"/>
+                            <constraint firstItem="5vH-Te-y4C" firstAttribute="top" secondItem="fgO-dP-3Cm" secondAttribute="bottom" constant="20" id="VzE-WG-PxS"/>
+                            <constraint firstItem="v1D-ut-LUW" firstAttribute="width" secondItem="5vH-Te-y4C" secondAttribute="width" id="ZGm-dl-Oi1"/>
+                            <constraint firstItem="lDe-gA-D64" firstAttribute="top" secondItem="v1D-ut-LUW" secondAttribute="bottom" constant="20" id="bUY-cq-48I"/>
+                            <constraint firstItem="5vH-Te-y4C" firstAttribute="centerX" secondItem="fgO-dP-3Cm" secondAttribute="centerX" id="cMV-2N-38I"/>
+                            <constraint firstItem="fgO-dP-3Cm" firstAttribute="height" secondItem="cLn-ft-qou" secondAttribute="height" id="ecd-FE-Mbo"/>
+                            <constraint firstItem="fgO-dP-3Cm" firstAttribute="centerX" secondItem="cLn-ft-qou" secondAttribute="centerX" id="gKC-41-5Ka"/>
+                            <constraint firstItem="5vH-Te-y4C" firstAttribute="width" secondItem="fgO-dP-3Cm" secondAttribute="width" id="hMF-mq-GcD"/>
+                            <constraint firstItem="fgO-dP-3Cm" firstAttribute="width" secondItem="cLn-ft-qou" secondAttribute="width" id="l47-PW-atB"/>
+                            <constraint firstItem="cLn-ft-qou" firstAttribute="top" secondItem="5nP-tf-i95" secondAttribute="bottom" constant="50" id="lBq-ED-w94"/>
+                            <constraint firstItem="v1D-ut-LUW" firstAttribute="height" secondItem="5vH-Te-y4C" secondAttribute="height" id="oaT-nC-WAc"/>
+                            <constraint firstItem="v1D-ut-LUW" firstAttribute="centerX" secondItem="5vH-Te-y4C" secondAttribute="centerX" id="qtK-5Z-63A"/>
+                            <constraint firstItem="5nP-tf-i95" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="smp-Kh-GYd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5nP-tf-i95" secondAttribute="trailing" id="w9R-UO-znh"/>
+                            <constraint firstItem="5nP-tf-i95" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="y4F-J7-pjm"/>
+                            <constraint firstItem="5vH-Te-y4C" firstAttribute="height" secondItem="fgO-dP-3Cm" secondAttribute="height" id="ynm-Q2-d1V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="5nP-tf-i95" id="w7q-qm-ZDS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="liuyifei" width="1080" height="720"/>
+    </resources>
+</document>
